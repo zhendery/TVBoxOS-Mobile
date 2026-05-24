@@ -110,7 +110,7 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'com.squareup.okio:okio:2.8.0'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.45-androidx'
-    implementation 'com.kingja.loadsir:loadsir:1.3.8'
+    implementation 'com.github.KingJA:LoadSir:1.3.8'
     implementation 'com.google.code.gson:gson:2.8.7'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
@@ -162,7 +162,9 @@ dependencies {
     //崩溃
     implementation project(":crash")
     //dlna投屏
-    implementation 'com.github.devin1014.DLNA-Cast:dmc:v2.0.0'
+    implementation ('com.github.devin1014.DLNA-Cast:dmc:v2.0.0') {
+        exclude group: 'org.eclipse.jetty.orbit', module: 'javax.servlet'
+    }
     // Lifecycles only (without ViewModel or LiveData)
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
 }
