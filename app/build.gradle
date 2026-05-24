@@ -126,6 +126,7 @@ dependencies {
 
     implementation 'com.lzy.net:okgo:3.0.4'
     // implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    // Source: https://mvnrepository.com/artifact/com.owen/tv-recyclerview
     implementation 'com.owen:tv-recyclerview:3.0.0'
 
     implementation 'com.github.getActivity:XXPermissions:13.6'
